@@ -11,7 +11,7 @@ const ResetPassword = () => {
       <label htmlFor="password">Password</label>
        <input type="password" placeholder='password' id="password"/>
       <button type='submit'>Reset</button>
-      <Link className='link' to="/">Login</Link>
+      <Link className='link' to="/login">Login</Link>
     </form>
   </div>
   </>

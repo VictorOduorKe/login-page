@@ -36,6 +36,7 @@
 }
 .form form input:focus{
     outline: 2px solid green;
+    background: rgb(194, 193, 193);
 }
 .form form button{
     padding: 10px;
