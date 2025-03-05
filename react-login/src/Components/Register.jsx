@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './CSS/login.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [isInputValid, setIsInputValid] = useState(true);
   const [registerError, setRegisterError] = useState("");
   const [successMessage, setSuccessMessage] = useState(""); // New success message state
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate=useNavigate();
 
   const [formData, setFormData] = useState({
     username: "",
@@ -33,9 +34,12 @@ const Register = () => {
       setIsSubmitting(true);
 
       setTimeout(() => {
-        setIsSubmitting(false);
         setSuccessMessage("Registration successful!"); // Show success message after submission
       }, 2000);
+
+      setTimeout(()=>{
+         navigate("/login");
+      },6000)
       setSuccessMessage("");
     }
   };
