@@ -38,7 +38,7 @@ const Register = () => {
       }, 2000);
 
       setTimeout(()=>{
-         navigate("/login");
+         navigate("/login-page");
       },6000)
       setSuccessMessage("");
     }
