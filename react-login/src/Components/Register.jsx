@@ -86,7 +86,7 @@ const Register = () => {
         {!isInputValid && <div className="messages error">{registerError}</div>}
         {successMessage && <div className="messages success">{successMessage}</div>} {/* Success message */}
 
-        <Link className="link" to="/login">Login here</Link>
+        <Link className="link" to="/login-page">Login here</Link>
       </form>
     </div>
   );

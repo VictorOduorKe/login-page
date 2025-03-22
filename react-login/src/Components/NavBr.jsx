@@ -4,12 +4,11 @@ const NavBr = () => {
   return (
     <>
     
-    <header>
+    <header className='navbar'>
         <nav> 
-            <Link to={"/"}>Register</Link>
+            <Link className='link' to={"/"}>Register</Link>
             <ul>
-                <li><Link to={"/login-page"}>Login</Link></li>
-                <li></li>
+                <li><Link className='link' to={"/login-page"}>Login</Link></li>
             </ul>
         </nav>
     </header>
